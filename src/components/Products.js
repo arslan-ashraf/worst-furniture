@@ -1,12 +1,12 @@
-import office_chair from '../images/office_chair.png'
-import office_desk from '../images/office_desk.png'
+import officeChair from '../images/officeChair.png'
+import officeDesk from '../images/officeDesk.png'
 import recliner from '../images/recliner.png'
 import couch from '../images/couch.png'
 import bed from '../images/bed.png'
 import fan from '../images/fan.png'
-import air_conditioner from '../images/air_conditioner.png'
-import dining_table from '../images/dining_table.png'
-import dining_chair from '../images/dining_chair.png'
+import airConditioner from '../images/airConditioner.png'
+import diningTable from '../images/diningTable.png'
+import diningChair from '../images/diningChair.png'
 import {Link} from 'react-router-dom'
 
 function Products({ products_list }) {
@@ -17,13 +17,13 @@ function Products({ products_list }) {
 					<div class="col-sm">
 						<h4>{products_list[0].product_type}</h4>
 						<Link to="/office-chair">
-							<img src={office_chair} class="img-responsive" width="100%" height="auto" />
+							<img src={officeChair} class="img-responsive" width="100%" height="auto" />
 						</Link>
 					</div>
 					<div class="col-sm">
 						<h4>{products_list[1].product_type}</h4>
 						<Link to="/office-desk">	
-							<img src={office_desk} class="img-responsive" width="100%" height="auto" />
+							<img src={officeDesk} class="img-responsive" width="100%" height="auto" />
 						</Link>
 					</div>
 					<div class="col-sm">
@@ -49,7 +49,7 @@ function Products({ products_list }) {
 					<div class="col-sm">
 						<h4>{products_list[5].product_type}</h4>
 						<Link to="/dining-table">
-							<img src={dining_table} class="img-responsive" width="100%" height="auto" />
+							<img src={diningTable} class="img-responsive" width="100%" height="auto" />
 						</Link>
 					</div>
 				</div>
@@ -57,13 +57,13 @@ function Products({ products_list }) {
 					<div class="col-sm">
 						<h4>{products_list[6].product_type}</h4>
 						<Link to="/dining-chair">
-							<img src={dining_chair} class="img-responsive" width="100%" height="auto" />
+							<img src={diningChair} class="img-responsive" width="100%" height="auto" />
 						</Link>
 					</div>
 					<div class="col-sm">
 						<h4>{products_list[7].product_type}</h4>
 						<Link to="/air-conditioner">
-							<img src={air_conditioner} class="img-responsive" width="100%" height="auto" />
+							<img src={airConditioner} class="img-responsive" width="100%" height="auto" />
 						</Link>
 					</div>
 					<div class="col-sm">

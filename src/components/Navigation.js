@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom'
-import logo from '../images/wf_image.png'
+import logo from '../images/wfImage.png'
 
 function Navigation() {
 	return (
