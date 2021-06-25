@@ -17,19 +17,19 @@ function Products({ products_list }) {
 					<div class="col-sm">
 						<h4>{products_list[0].product_type}</h4>
 						<Link to="/office-chair">
-							<img src={officeChair} class="img-responsive" width="100%" height="auto" />
+							<img alt="testing" src={officeChair} class="img-responsive" width="100%" height="auto" />
 						</Link>
 					</div>
 					<div class="col-sm">
 						<h4>{products_list[1].product_type}</h4>
 						<Link to="/office-desk">	
-							<img src={officeDesk} class="img-responsive" width="100%" height="auto" />
+							<img alt="testing" src={officeDesk} class="img-responsive" width="100%" height="auto" />
 						</Link>
 					</div>
 					<div class="col-sm">
 						<h4>{products_list[2].product_type}</h4>
 						<Link to="/recliner">
-							<img src={recliner} class="img-responsive" width="100%" height="auto" />
+							<img alt="testing" src={recliner} class="img-responsive" width="100%" height="auto" />
 						</Link>
 					</div>
 				</div>
@@ -37,19 +37,19 @@ function Products({ products_list }) {
 					<div class="col-sm">
 						<h4>{products_list[3].product_type}</h4>
 						<Link to="/couch">	
-							<img src={couch} class="img-responsive" width="100%" height="auto" />
+							<img alt="testing" src={couch} class="img-responsive" width="100%" height="auto" />
 						</Link>
 					</div>
 					<div class="col-sm">
 						<h4>{products_list[4].product_type}</h4>
 						<Link to="/bed">
-							<img src={bed} class="img-responsive" width="100%" height="auto" />
+							<img alt="testing" src={bed} class="img-responsive" width="100%" height="auto" />
 						</Link>
 					</div>
 					<div class="col-sm">
 						<h4>{products_list[5].product_type}</h4>
 						<Link to="/dining-table">
-							<img src={diningTable} class="img-responsive" width="100%" height="auto" />
+							<img alt="testing" src={diningTable} class="img-responsive" width="100%" height="auto" />
 						</Link>
 					</div>
 				</div>
@@ -57,19 +57,19 @@ function Products({ products_list }) {
 					<div class="col-sm">
 						<h4>{products_list[6].product_type}</h4>
 						<Link to="/dining-chair">
-							<img src={diningChair} class="img-responsive" width="100%" height="auto" />
+							<img alt="testing" src={diningChair} class="img-responsive" width="100%" height="auto" />
 						</Link>
 					</div>
 					<div class="col-sm">
 						<h4>{products_list[7].product_type}</h4>
 						<Link to="/air-conditioner">
-							<img src={airConditioner} class="img-responsive" width="100%" height="auto" />
+							<img alt="testing" src={airConditioner} class="img-responsive" width="100%" height="auto" />
 						</Link>
 					</div>
 					<div class="col-sm">
 						<h4>{products_list[8].product_type}</h4>
 						<Link to="/fan">
-							<img src={fan} class="img-responsive" width="100%" height="auto" />
+							<img alt="testing" src={fan} class="img-responsive" width="100%" height="auto" />
 						</Link>
 					</div>
 				</div>

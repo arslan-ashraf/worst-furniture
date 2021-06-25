@@ -15,15 +15,15 @@ function ProductDescription({ product }) {
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-6">
-						<img src={product.id == 1 && officeChair} class="img-responsive" width="100%" height="auto" />
-						<img src={product.id == 2 && officeDesk} class="img-responsive" width="100%" height="auto" />
-						<img src={product.id == 3 && recliner} class="img-responsive" width="100%" height="auto" />
-						<img src={product.id == 4 && couch} class="img-responsive" width="100%" height="auto" />
-						<img src={product.id == 5 && bed} class="img-responsive" width="100%" height="auto" />
-						<img src={product.id == 6 && diningTable} class="img-responsive" width="100%" height="auto" />
-						<img src={product.id == 7 && diningChair} class="img-responsive" width="100%" height="auto" />
-						<img src={product.id == 8 && airConditioner} class="img-responsive" width="100%" height="auto" />
-						<img src={product.id == 9 && fan} class="img-responsive" width="100%" height="auto" />
+						<img alt="testing" src={product.id === 1 && officeChair} class="img-responsive" width="100%" height="auto" />
+						<img alt="testing" src={product.id === 2 && officeDesk} class="img-responsive" width="100%" height="auto" />
+						<img alt="testing" src={product.id === 3 && recliner} class="img-responsive" width="100%" height="auto" />
+						<img alt="testing" src={product.id === 4 && couch} class="img-responsive" width="100%" height="auto" />
+						<img alt="testing" src={product.id === 5 && bed} class="img-responsive" width="100%" height="auto" />
+						<img alt="testing" src={product.id === 6 && diningTable} class="img-responsive" width="100%" height="auto" />
+						<img alt="testing" src={product.id === 7 && diningChair} class="img-responsive" width="100%" height="auto" />
+						<img alt="testing" src={product.id === 8 && airConditioner} class="img-responsive" width="100%" height="auto" />
+						<img alt="testing" src={product.id === 9 && fan} class="img-responsive" width="100%" height="auto" />
 
 					</div>
 					<div class="col-4">
