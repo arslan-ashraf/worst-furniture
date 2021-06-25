@@ -2,11 +2,11 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import Navigation from './components/Navigation'
 import Cart from './components/Cart'
 import Products from './components/Products'
-import Sign_in from './components/Sign_in'
-import Sign_up from './components/Sign_up'
+import SignIn from './components/SignIn'
+import SignUp from './components/SignUp'
 import Home from './components/Home'
-import Page_not_found from './components/Page_not_found'
-import Product_description from './components/Product_description'
+import PageNotFound from './components/PageNotFound'
+import ProductDescription from './components/ProductDescription'
 
 const products_list = [
   {id: 1, product_type: 'Office Chair', description: "This is a terrific product if you're looking to ruin your back!", 
@@ -38,20 +38,20 @@ function App() {
         <Switch>
           <Route path="/" exact><Home /></Route>
           <Route path="/products"><Products products_list={products_list} /></Route>
-          <Route path={products_list[0].description_url}><Product_description product={products_list[0]} /></Route>
-          <Route path={products_list[1].description_url}><Product_description product={products_list[1]} /></Route>
-          <Route path={products_list[2].description_url}><Product_description product={products_list[2]} /></Route>
-          <Route path={products_list[3].description_url}><Product_description product={products_list[3]} /></Route>
-          <Route path={products_list[4].description_url}><Product_description product={products_list[4]} /></Route>
-          <Route path={products_list[5].description_url}><Product_description product={products_list[5]} /></Route>
-          <Route path={products_list[6].description_url}><Product_description product={products_list[6]} /></Route>
-          <Route path={products_list[7].description_url}><Product_description product={products_list[7]} /></Route>
-          <Route path={products_list[8].description_url}><Product_description product={products_list[8]} /></Route>
-          <Route path="/sign-in"><Sign_in /></Route>
-          <Route path="/sign-up"><Sign_up /></Route>
+          <Route path={products_list[0].description_url}><ProductDescription product={products_list[0]} /></Route>
+          <Route path={products_list[1].description_url}><ProductDescription product={products_list[1]} /></Route>
+          <Route path={products_list[2].description_url}><ProductDescription product={products_list[2]} /></Route>
+          <Route path={products_list[3].description_url}><ProductDescription product={products_list[3]} /></Route>
+          <Route path={products_list[4].description_url}><ProductDescription product={products_list[4]} /></Route>
+          <Route path={products_list[5].description_url}><ProductDescription product={products_list[5]} /></Route>
+          <Route path={products_list[6].description_url}><ProductDescription product={products_list[6]} /></Route>
+          <Route path={products_list[7].description_url}><ProductDescription product={products_list[7]} /></Route>
+          <Route path={products_list[8].description_url}><ProductDescription product={products_list[8]} /></Route>
+          <Route path="/sign-in"><SignIn /></Route>
+          <Route path="/sign-up"><SignUp /></Route>
           <Route path="/cart"><Cart /></Route>
-          <Route path="/page-not-found"><Page_not_found /></Route>
-          <Route path=""><Page_not_found /></Route>
+          <Route path="/page-not-found"><PageNotFound /></Route>
+          <Route path=""><PageNotFound /></Route>
         </Switch>
       </div>
     </Router>

@@ -1,4 +1,4 @@
-function Page_not_found() {
+function PageNotFound() {
 	return (
 		<>
 			<div class="container">
@@ -8,4 +8,4 @@ function Page_not_found() {
 	)
 }
 
-export default Page_not_found
+export default PageNotFound
