@@ -30,7 +30,7 @@
 5 - Verify payments
 6 - Moniter order/delivery 
 
-## Use Case Diagram
+Use Case Diagram
 						 -------------can----> add_items_to_cart
 						|
 						 ------only---can----> register
@@ -53,13 +53,13 @@
 | Administrator | ---------can---------------> remove_and_or_ban_users
  ---------------
 
-     ----------------------can---------------> add_edit_remove_products_and_productInfo
-    |
+   ----------------------can---------------> add_edit_remove_products_and_productInfo
+  |
  --------------------
 | Ecommerce Platform | ----can---------------> send_customers_order_information
  --------------------
-    |
-     ----------------------can---------------> notify_customers_on_order_status_or_delivery
+  |
+   ----------------------can---------------> notify_customers_on_order_status_or_delivery
 
 
 ### CLASSES
