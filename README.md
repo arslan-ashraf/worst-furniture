@@ -31,7 +31,7 @@
 6 - Moniter order/delivery 
 
 ### Use Case Diagram
-[!alt Text](./images/useCaseDiagram.png)
+![useCaseDiagram](https://user-images.githubusercontent.com/43149204/124045390-8ce8d100-d9dd-11eb-819a-a3bae23d358e.png)
 
 ### CLASSES
 # Product_category 
@@ -41,4 +41,4 @@
 # Order
 
 ### Class Diagram 
-[!alt Text](./images/classDiagram.png)
+![classDiagram](https://user-images.githubusercontent.com/43149204/124045405-96723900-d9dd-11eb-9ad5-af836845cdbd.png)
