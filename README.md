@@ -30,37 +30,8 @@
 5 - Verify payments
 6 - Moniter order/delivery 
 
-Use Case Diagram
-						 -------------can----> add_items_to_cart
-						|
-						 ------only---can----> register
-						|
-			   -------------------
-	 -------> | User, unregisterd | --can----> browse_catalog
-    |		   -------------------	
-    |
- -------------------- 
-|  User, registered | -----can---------------> make_a_purchase
- --------------------  
-    |
-     ----------------------can---------------> make_returns
-    |
-     ----------------------can---------------> leave_product_reviews
-    | 
-     ----------------------can---------------> login_or_logout
-
- ---------------
-| Administrator | ---------can---------------> remove_and_or_ban_users
- ---------------
-
-   ----------------------can---------------> add_edit_remove_products_and_productInfo
-  |
- --------------------
-| Ecommerce Platform | ----can---------------> send_customers_order_information
- --------------------
-  |
-   ----------------------can---------------> notify_customers_on_order_status_or_delivery
-
+### Use Case Diagram
+[!alt Text](./images/useCaseDiagram.png)
 
 ### CLASSES
 # Product_category 
@@ -70,98 +41,4 @@ Use Case Diagram
 # Order
 
 ### Class Diagram 
-
- ----------------------- 
-| ENUM - Payment_status |<-------------------------
- -----------------------							|
-| - pending				|							|
-| - Failed				|							|
-| - Success				|							|
-| - Canceled			|							|
-| - Refuned				|							|
- -----------------------							|
- 													|
- ----------------------- 							|
-| ENUM - Account_status |<------------------		|
- -----------------------					|		|
-| - Active				|					|		|
-| - Inactive			|					|		|
-| - Canceled			|					|		|
-| - Banned				|					|		|
- -----------------------					|		|
- 											|		|
- ----------------------- 					|		|
-|  ENUM - Order_status 	|<----------------------	|
- -----------------------					|	|	|
-| - Assembly_phase		|					|	|	|
-| - Shipped				|					|	|	|
-| - Canceled			|					|	|	|
- -----------------------					|	|	|
- 											|	|	|	
- ----------------------- 					|	|	|
-|  Data - Credit/Debit 	|<--------------	|	|	|
- -----------------------				|	|	|	|
-| - Card_number			|				|	|	|	|
-| - Expiration			|				|	|	|	|
-| - Code 				|				|	|	|	|
- -----------------------				|	|	|	|
- 										|	|	|	|
- 										|	|	|	|
- ----------------------- 				|	|	|	|
-|    Data - Address 	|<----------	|	|	|	|
- -----------------------			|	|	|	|	|
-| - Street				|			|	|	|	|	|
-| - City				|			|	|	|	|	|
-| - State 				|			|	|	|	|	|
-| - Zipcode				|			|	|	|	|	|
- -----------------------			|	|	|	|	|
- 									|	|	|	|	|
- ------------------------------- 	|	|	|	|	|	 ---------------------------------------
-|   	Class - Account  		|	|	|	|	|	|	| 			Class - Order 				|
- -------------------------------|	|	|	|	|	|	 ---------------------------------------
-| - Username: string			|	|	|	|	|	|	| - Order_number: int 					|
-| - Password: string			|	|	|	|	|   -->	| - Payment_status: Payment_status 		|
-| - Shipping_address: Address	|<--	|	|	 ----->	| - Status: Order_status 				|
-| - Payment_info: Card 			|<------	|			| - Add_to_shipping_log: function()		|
-| - Status: Account_status		|<----------			 -------------------------------------
-| - Add_to_cart: function()		| 											|
-| -	Update_account: function()	|											|
-| - Add_review: function()		|											|
-| - Edit_review: function()		|											|
-| - Edit_cart: function()		|											|
- -------------------------------											|
- 	^	^	^																|
- 	|	|	|																|
- 	|	|	 ----<------------<-------------Order belongs to Account----<---
- 	|	^
- 	^	|
- 	|	 -------<--------<------Product_review belongs to Account---<-------
- 	|																		|
- 	|																		^
- Cart belongs to Account 													|
- 	|																		|
- ------------------------------- 						 ---------------------------------------
-|   	Class - Cart  			|						| 		Class - Product_review 			|
- -------------------------------|						 ---------------------------------------
-| - Username: string			|						| - Product_id: int 					|
-| - Items: list					|						| - Review: string				 		|
-| - Subtotal: int 				|						| - Rating: int 		 				|
-| - Tax: int 		 			|						 ---------------------------------------
-| - Shipping_cost: int 			|						 					|
-| - Calculate_total: function()	| 											|
- -------------------------------											|
- 																			|
- 				 -<-------------<-----Product_view belongs to Product---<--- 	
- 				|
- 				|
- ------------------------------- 						 ---------------------------------------
-|   	Class - Product  		|						| 	  Class - Product_Category 			|
- -------------------------------|						 ---------------------------------------
-| - Title: string				|						| - Categories: list 					|
-| - Description: string			|						| - Add_category: function()	 		|
-| - Price: int 					|						| - Remove_category: function() 		|
-| - Quantity: int 				|						 ---------------------------------------
-| - Shipping_cost: int 			|						 					^ 		
- -------------------------------											|
- 				|															|
- 				 -------->---Product belongs to Product_Category----->------
+[!alt Text](./images/classDiagram.png)
