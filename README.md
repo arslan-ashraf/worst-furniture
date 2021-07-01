@@ -23,12 +23,12 @@
 3 - the ecommerce platform - add, edit or remove products and product information, send order information, notifications on order status, delivery
 
 ## How the system is to be used
-1 - User registeration
-2 - Login/logout
-3 - Add/remove/edit product
-4 - Add items to cart
-5 - Verify payments
-6 - Moniter order/delivery 
+- User registeration
+- Login/logout
+- Add/remove/edit product
+- Add items to cart
+- Verify payments
+- Moniter order/delivery 
 
 ## Use Case Diagram
 ![useCaseDiagram](https://user-images.githubusercontent.com/43149204/124045390-8ce8d100-d9dd-11eb-819a-a3bae23d358e.png)
