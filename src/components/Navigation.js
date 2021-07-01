@@ -24,7 +24,11 @@ function Navigation() {
 		        		<a className="nav-link" href="/products">Products</a>
 		        	</Link>
 		    	</li>
-
+		    	<li className="nav-item">
+		    		
+		        		<a className="nav-link" href="https://github.com/arslan-ashraf/worst-furniture">Github: Design</a>
+		        	
+		    	</li>
 		    </ul>
 		</div>
 
